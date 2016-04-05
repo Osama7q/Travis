@@ -12,10 +12,10 @@ after_success:
   - git remote -v
   - git config --global user.email "[Osama7q@hotmail.com]"
   - git config --global user.name "[Osama7q]"
- - git checkout master
- - npm version patch
+  - git checkout master
+  - npm version patch
   - git commit -am "[skip ci] bump version"
- - git log --oneline
+  - git log --oneline
   - git remote set-url origin [https://github.com/Osama7q/Travis]
   - git push origin master
 #  - npm run coverage
